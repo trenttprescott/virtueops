@@ -1,0 +1,2122 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VirtueOps - DevOps &amp; Systems Administration</title>
+  <meta name="description"
+    content="Advanced DevOps consulting, cloud infrastructure management, CI/CD automation, 24/7 monitoring, and reliable systems administration.." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="assets/aos.css" />
+  <script src="assets/aos.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/output.css" />
+  <link rel="icon" href="assets/system.png" type="image/x-icon">
+
+</head>
+<!-- VirtueOps WhatsApp Popup Widget -->
+<div id="wa-widget">
+  <!-- Floating Button -->
+  <button id="wa-btn" aria-label="Chat on WhatsApp">
+    <span id="wa-btn-label">Chat on WhatsApp</span>
+    <svg id="wa-icon-open" viewBox="0 0 24 24" width="30" height="30" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.86.5 3.65 1.44 5.23L2 22l4.92-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.92.83.85-2.84-.2-.32A8.2 8.2 0 1 1 12 20.2zm4.4-6.1c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.4-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.68 2.56 4.08 3.6.57.25 1.02.4 1.36.51.57.18 1.09.16 1.5.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+    <span id="wa-icon-close">✕</span>
+    <span class="wa-dot"></span>
+  </button>
+
+  <!-- Popup Box -->
+  <div id="wa-popup">
+    <div class="wa-header">
+      <div class="wa-avatar">V</div>
+      <div>
+        <strong>VirtueOps</strong>
+        <span><i class="wa-online"></i> Online • Replies within 2 hours</span>
+      </div>
+      <button id="wa-close">✕</button>
+    </div>
+
+    <div class="wa-body">
+      <div class="wa-msg">
+        <strong>Hi, I'm Trent from VirtueOps 👋</strong><br>
+        We build systems for growing businesses in Gaborone.<br><br>
+        What do you need today?
+      </div>
+
+      <button class="wa-option" data-msg="Hi VirtueOps! I want Business in a Box (Local + Cloud + E-Filing) - P6,600. Can you tell me more?">
+        📦 Business in a Box — P6,600
+      </button>
+
+      <button class="wa-option" data-msg="Hi VirtueOps! I want E-Filing & Digitalisation - P1,500. How do we start?">
+        🗂️ E-Filing & Digitalisation — P1,500
+      </button>
+
+      <button class="wa-option" data-msg="Hi VirtueOps! I want a Website + SEO + CMS - P3,500. Can you show me examples?">
+        🌐 Website + SEO + CMS — P3,500
+      </button>
+
+      <button class="wa-option" data-msg="Hi VirtueOps! I want WhatsApp CRM Setup - P1,500.">
+        💬 WhatsApp CRM Setup — P1,500
+      </button>
+
+      <button class="wa-option wa-option-red" data-msg="Hi VirtueOps! I want to book my FREE 30-min Audit.">
+        ✅ Book FREE Audit — FREE
+      </button>
+
+      <p class="wa-footer">Mon–Sat 8AM–6PM • Gaborone, Botswana<br>50% deposit to start</p>
+    </div>
+  </div>
+</div>
+
+<body class="font-body">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <div class="flex flex-col items-center gap-6">
+      <!-- Animated System -->
+      <svg width="52" height="52" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="system-path" d="M12 18h60v20H12zM22 28h8v-8h-8v8zm32 0h8v-8h-8v8zM12 46h60v20H12zM22 56h8v-8h-8v8zm32 0h8v-8h-8v8z" fill="#DC2626"
+          style="animation: systembeat 1.4s ease-in-out infinite;">
+        </path>
+      </svg>
+
+      <!-- Systems Audit Line -->
+      <svg class="ecg-line" viewBox="0 0 260 60">
+        <path class="ecg-path"
+          d="M0,30 L40,30 L50,30 L55,10 L60,50 L65,5 L72,55 L78,30 L120,30 L130,30 L135,10 L140,50 L145,5 L152,55 L158,30 L200,30 L210,30 L215,10 L220,50 L225,5 L232,55 L238,30 L260,30" />
+      </svg>
+
+      <div class="text-white font-heading text-xl font-semibold tracking-wide mt-2">VirtueOps</div>
+      <div class="text-slate-400 text-sm">Loading...</div>
+    </div>
+  </div>
+
+  <!-- ===================== TOP BAR ===================== -->
+  <div class="topbar py-2 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+            <strong class="text-red-400">24/7 Incident Line:</strong>
+            <a href="tel:+267-78916610" class="hover:text-red-400 transition-colors">+267 78916610</a>
+          </span>
+          <span class="hidden md:flex items-center gap-2 text-slate-400">
+            <span>|</span>
+            <a href="mailto:admin@virtueops.net" class="hover:text-white transition-colors">admin@virtueops.net</a>
+          </span>
+        </div>
+        <div class="flex items-center gap-4 text-slate-400 text-xs">
+          <span>Mon–Sat: 8AM – 6PM</span>
+          <span>|</span>
+          <span>Emergency: 24/7</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-transparent transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-18">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center shadow-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-heading font-800 text-lg leading-tight dark:text-black">VirtueOps</div>
+            <div class="text-xs text-slate-600 leading-none">DevOps &amp; Sysadmin</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#home" class="nav-link text-sm">Home</a>
+          <a href="#about" class="nav-link text-sm">About</a>
+          <a href="#services" class="nav-link text-sm">Services</a>
+          <a href="#teams" class="nav-link text-sm">Teams</a>
+          <a href="#consultations" class="nav-link text-sm">Consultations</a>
+          <a href="#blog" class="nav-link text-sm">Blog</a>
+          <a href="#contact" class="nav-link text-sm">Contact</a>
+        </div>
+
+        <!-- Right Actions -->
+        <div class="flex items-center gap-3">
+          <a href="#consultations" class="hidden lg:flex btn-primary text-sm py-2.5 px-5">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            Book A Free Audit
+          </a>
+          <!-- Mobile Menu Toggle -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-white">
+            <i data-lucide="menu" class="w-6 h-6" id="menu-open"></i>
+            <i data-lucide="x" class="w-6 h-6 hidden" id="menu-close"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+        <a href="#home" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Home</a>
+        <a href="#about" class="nav-link text-slate-200 py-2.5 text-sm font-medium">About the Team</a>
+        <a href="#services" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Services</a>
+        <a href="#teams" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Teams</a>
+        <a href="#consultations" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Consultations</a>
+        <a href="#blog" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Blog</a>
+        <a href="#contact" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Contact</a>
+        <a href="#consultations" class="btn-primary mt-3 w-full justify-center">Book A Free Audit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero-section flex items-center justify-center relative pt-4">
+    <!-- Floating Circles Deco -->
+    <div class="absolute top-20 right-16 w-72 h-72 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-40 left-10 w-56 h-56 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-26 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div>
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-2 mb-6" data-aos="fade-up">
+            <span class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#DC2626">
+                <path
+                  d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+              </svg>
+              AWS & Azure 
+            </span>
+            <span class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+              Full-Stack Observability
+            </span>
+            <span class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              Systems Administration
+            </span>
+          </div>
+
+          <h1 class="font-heading font-extrabold text-4xl lg:text-5xl text-white leading-tight mb-6" data-aos="fade-up"
+            data-aos-delay="100">
+            Expert Infrastructure Operations<br />
+            <span class="text-red-400">Built</span> To Stay Up
+          </h1>
+
+          <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-lg" data-aos="fade-up" data-aos-delay="200">
+            We provide advanced DevOps consulting, cloud infrastructure management, CI/CD automation, 24/7 monitoring, and reliable systems administration for engineering teams of every size.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-10" data-aos="fade-up" data-aos-delay="300">
+            <a href="#consultations" class="btn-primary text-base py-3.5 px-7">
+              <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+              Book A Free Audit
+            </a>
+            <a href="#services" class="btn-outline text-base py-3.5 px-7">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+              Explore Services
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="flex flex-wrap gap-8" data-aos="fade-up" data-aos-delay="400">
+            <div>
+              <div class="font-heading font-bold text-3xl text-white">8+</div>
+              <div class="text-slate-400 text-sm">Years Experience</div>
+            </div>
+            <div class="border-l border-white/20 pl-8">
+              <div class="font-heading font-bold text-3xl text-white">25+</div>
+              <div class="text-slate-400 text-sm">Platforms Managed</div>
+            </div>
+            <div class="border-l border-white/20 pl-8">
+              <div class="font-heading font-bold text-3xl text-white">98%</div>
+              <div class="text-slate-400 text-sm">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Engineer Image Placeholder -->
+        <div class="hidden lg:flex justify-center relative" data-aos="fade-left" data-aos-delay="200">
+          <div class="relative">
+            <div
+              class="w-80 h-80 xl:w-96 xl:h-96 bg-gradient-to-br from-red-600/20 to-slate-600/20 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden"
+              style="animation: float 6s ease-in-out infinite;">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80&auto=format&fit=crop" />
+            </div>
+
+            <!-- Floating Info Cards -->
+            <div class="absolute -top-6 -left-10 bg-white rounded-xl px-4 py-3 shadow-xl border border-gray-100">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="#DC2626">
+                    <path
+                      d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-heading font-bold text-sm text-slate-800">System Rate</div>
+                  <div class="text-xs text-slate-500">99.98% Last 30 Days</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute -bottom-4 -right-8 bg-white rounded-xl px-4 py-3 shadow-xl border border-gray-100">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2">
+                    <path d="M9 12l2 2 4-4" />
+                    <circle cx="12" cy="12" r="10" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-heading font-bold text-sm text-slate-800">Consultation</div>
+                  <div class="text-xs text-slate-500">Available Today</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div
+      class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-2 text-slate-400 text-xs">
+      <span>Scroll Down</span>
+      <div class="w-px h-12 bg-gradient-to-b from-slate-400 to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- ===================== EMERGENCY BANNER ===================== -->
+  <div class="bg-red-600 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3 text-white">
+          <span class="w-3 h-3 bg-white rounded-full animate-pulse"></span>
+          <span class="font-heading font-semibold text-base">Production Down?</span>
+          <span class="text-red-200 text-sm hidden md:block">Our on-call engineers are available 24/7 to help you.</span>
+        </div>
+        <a href="tel:+1800879467"
+          class="bg-white text-red-600 font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-red-50 transition-all text-sm whitespace-nowrap flex items-center gap-2">
+          <i data-lucide="phone-call" class="w-4 h-4"></i>
+          Call On-Call Support
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== APPOINTMENT FORM ===================== -->
+  <section id="consultations" class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="calendar-check" class="w-3.5 h-3.5"></i>
+          Book Now
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Schedule Your
+          Consultation</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Quick, simple online booking. Our team will
+          confirm within 2 hours during working hours.</p>
+      </div>
+      <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 lg:p-12 shadow-2xl max-w-7xl mx-auto"
+        data-aos="fade-up" data-aos-delay="100">
+        <form id="appt-form" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="flex flex-col gap-1.5">
+            <label class="text-slate-300 text-sm font-medium">Your Name / Company Name *</label>
+            <input id="consultName" type="text" placeholder="Your full name / company name"
+            class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"
+            required />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-slate-300 text-sm font-medium">Email Address *</label>
+            <input id="consultEmail" type="email" placeholder="name@company.com"
+              class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"
+              required />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-slate-300 text-sm font-medium">Phone / Whatsapp *</label>
+            <input id="consultPhone" type="tel" placeholder="+267 7XX XXXX"
+              class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"
+              required />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-slate-300 text-sm font-medium">Preferred Date *</label>
+            <input id="consultDate" type="date"
+              class="bg-slate-700 border border-slate-600 text-white rounded-lg px-4 py-3 text-sm transition-all"
+              required />
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-slate-300 text-sm font-medium">Department</label>
+            <select id="f-dept" class="bg-slate-700 border border-slate-600 text-white rounded-lg px-4 py-3 text-sm transition-all">
+              <option>DevOps Consulting</option>
+              <option>Business in a Box - P6,600</option>
+              <option>E-Filing & Digitalisation - P1,500</option>
+              <option>Website + SEO + CMS - P3,500</option>
+              <option>Observability & Monitoring</option>
+              <option>Monthly Retainer - P3,300/month</option>
+              <option>FREE 30-min Audit</option>
+              
+            </select>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <label class="text-slate-300 text-sm font-medium">Message</label>
+            <input id="consultMessage" type="text" placeholder="Briefly describe your infrastructure challenge"
+              class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" />
+          </div>
+          <div class="md:col-span-2 lg:col-span-3 flex justify-center mt-2">
+            <button type="submit" class="btn-primary px-10 py-3.5 text-base">
+              <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+              Schedule Consultation
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT THE ENGINEER ===================== -->
+  <section id="about" class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Engineer Image -->
+        <div data-aos="fade-right" class="relative">
+          <div class="bg-gradient-to-br from-red-600 to-slate-800 rounded-3xl p-1 shadow-2xl max-w-md mx-auto lg:mx-0">
+            <div class="bg-slate-100 rounded-3xl p-8 text-center">
+              <img src="images/logo.jpg.png" />
+              <div class="mt-4">
+              <div class="font-heading font-bold text-xl text-slate-800">Virtue Creative Systems</div>
+              <div class="text-red-600 font-medium text-sm">Principal DevOps Engineering Firm</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Cert Badge -->
+          <div
+            class="absolute -bottom-5 -right-4 bg-white dark:bg-slate-700 rounded-xl p-4 shadow-xl border border-gray-100 dark:border-slate-600">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center">
+                <i data-lucide="award" class="w-5 h-5 text-red-600"></i>
+              </div>
+              <div>
+                <div class="font-heading font-bold text-sm text-slate-800 dark:text-white">Expert Engineers</div>
+                <div class="text-xs text-slate-500">AWS, Azure, CKA & RHCE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div data-aos="fade-left" data-aos-delay="100">
+          <span class="section-tag mb-4">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i>
+            Development & Operations Expertise
+          </span>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3 mb-5">
+            Dedicated to Your Platform Reliability with 8+ Years of Expertise
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+            Virtue Creative Systems is a senior systems engineering firm with over eight years of experience in diagnosing and
+            resolving complex infrastructure conditions. We specialize in Kubernetes operations, infrastructure as code,
+            and platform rehabilitation.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-4 border border-gray-100 dark:border-slate-600">
+              <div class="font-heading font-bold text-2xl text-red-600">8+</div>
+              <div class="text-sm text-slate-500 dark:text-slate-400">Years Experience</div>
+            </div>
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-4 border border-gray-100 dark:border-slate-600">
+              <div class="font-heading font-bold text-2xl text-red-600">55+</div>
+              <div class="text-sm text-slate-500 dark:text-slate-400">Platforms Managed</div>
+            </div>
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-4 border border-gray-100 dark:border-slate-600">
+              <div class="font-heading font-bold text-2xl text-red-600">7+</div>
+              <div class="text-sm text-slate-500 dark:text-slate-400">Certifications</div>
+            </div>
+            <div class="bg-white dark:bg-slate-700 rounded-xl p-4 border border-gray-100 dark:border-slate-600">
+              <div class="font-heading font-bold text-2xl text-red-600">250+</div>
+              <div class="text-sm text-slate-500 dark:text-slate-400">Migration Projects</div>
+            </div>
+          </div>
+
+          <!-- Qualifications -->
+          <div class="space-y-3 mb-8">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-red-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Systems Engineering</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-red-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">DevSecOps specialization, enterprise
+                operations centers</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-red-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">AWS, Azure, and Google Cloud experts
+                </span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-red-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm"> Kubernetes Administrator &amp;
+                RHCE</span>
+            </div>
+          </div>
+
+          <a href="#consultations" class="btn-primary-dark inline-flex">
+            <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+            Book A Free Audit
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="system-pulse" class="w-3.5 h-3.5"></i>
+          Our Services
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Comprehensive
+          Infrastructure Operations Services</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">From diagnostics to remediation, we offer
+          a full spectrum of DevOps and systems administration services tailored to your platform reliability needs.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service Card 1 -->
+        <div class="card-technical dark:bg-slate-800 dark:border-slate-700 group" data-aos="fade-up" data-aos-delay="0">
+          <div
+            class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2"
+              class="group-hover:stroke-white transition-colors">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Platform Reliability Consultation
+          </h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Comprehensive infrastructure assessments, risk
+            evaluations, and personalized preventive maintenance plans to keep your platform reliable.</p>
+          <a href="#"
+            class="mt-4 flex items-center gap-1 text-red-600 text-sm font-semibold hover:gap-2 transition-all">
+             <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="card-technical dark:bg-slate-800 dark:border-slate-700 group" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+            <i data-lucide="activity" class="w-6 h-6 text-blue-600 group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Observability &amp; Monitoring</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Advanced log aggregation,
+            distributed tracing, load testing, and synthetic monitoring for accurate system condition assessment.</p>
+          <a href="#"
+            class="mt-4 flex items-center gap-1 text-red-600 text-sm font-semibold hover:gap-2 transition-all">
+             <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="card-technical dark:bg-slate-800 dark:border-slate-700 group" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-600 transition-colors">
+            <i data-lucide="boxes" class="w-6 h-6 text-purple-600 group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Kubernetes &amp; Container Platforms
+          </h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Design, hardening, and day-2 operations
+            for Kubernetes clusters, container platforms, and orchestration at any scale.</p>
+          <a href="#"
+            class="mt-4 flex items-center gap-1 text-red-600 text-sm font-semibold hover:gap-2 transition-all">
+             <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="card-technical dark:bg-slate-800 dark:border-slate-700 group" data-aos="fade-up" data-aos-delay="0">
+          <div
+            class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 transition-colors">
+            <i data-lucide="shield" class="w-6 h-6 text-green-600 group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Managed Sysadmin</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Fully managed Linux and Windows server fleets: patching, hardening, backups, and user access management.</p>
+          <a href="#"
+            class="mt-4 flex items-center gap-1 text-red-600 text-sm font-semibold hover:gap-2 transition-all">
+             <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="card-technical dark:bg-slate-800 dark:border-slate-700 group" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-yellow-500 transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CA8A04" stroke-width="2"
+              class="group-hover:stroke-white transition-colors">
+              <path
+                d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Preventive Infrastructure Engineering</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Proactive risk reduction
+            through patch management, capacity planning, and hardened baselines across your estate.</p>
+          <a href="#"
+            class="mt-4 flex items-center gap-1 text-red-600 text-sm font-semibold hover:gap-2 transition-all">
+             <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="card-technical dark:bg-slate-800 dark:border-slate-700 group" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-600 transition-colors">
+            <i data-lucide="siren" class="w-6 h-6 text-red-600 group-hover:text-white transition-colors"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Emergency Infrastructure Support
+          </h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">24/7 rapid response for critical
+            incidents: outages, data loss, security breaches, and infrastructure emergencies requiring immediate attention.</p>
+          <a href="Emergency.html"
+            class="mt-4 flex items-center gap-1 text-red-600 text-sm font-semibold hover:gap-2 transition-all">
+             <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VirtueOps Botswana Section -->
+<section id="botswana" style="background:#f8fafc; padding:70px 20px;">
+  <div style="max-width:1100px; margin:0 auto; text-align:center;">
+    
+    <span style="background:#fee2e2; color:#e11d48; padding:8px 16px; border-radius:20px; font-size:13px; font-weight:700; font-family:sans-serif;">🇧🇼 FOR SCHOOLS & BUSINESSES IN BOTSWANA</span>
+    
+    <h2 style="font-size:36px; font-weight:900; color:#0f172a; margin:20px 0 10px; font-family:sans-serif; line-height:1.1;">Are You A School Or Business<br>In Gaborone?</h2>
+    
+    <p style="color:#475569; font-size:17px; max-width:650px; margin:0 auto 35px; font-family:sans-serif; line-height:1.6;">
+      <strong>Kubernetes for a second. We build you a complete system that just works - 
+      your files, your emails, your website, your backup. No more paper files. No more lost documents.</strong>
+    </p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; text-align:left;">
+
+      <!-- Card 1 -->
+      <div style="background:#fff; border-radius:16px; padding:24px; box-shadow:0 5px 20px rgba(0,0,0,.06); border-top:4px solid #e11d48;">
+        <div style="font-size:32px;">📦</div>
+        <h3 style="font-family:sans-serif; font-size:18px; margin:12px 0 6px;"><strong>Business in a Box</strong></h3>
+        <p style="font-family:sans-serif; font-size:13.5px; color:#64748b; line-height:1.5; margin:0;">Local + Cloud + E-Filing + Professional Emails + Backup. The full system.</p>
+        <p style="font-family:sans-serif; font-size:24px; font-weight:900; color:#0f172a; margin:16px 0 4px;">P6,600 <span style="font-size:13px; font-weight:600; color:#64748b;">once-off</span></p>
+        
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background:#fff; border-radius:16px; padding:24px; box-shadow:0 5px 20px rgba(0,0,0,.06); border-top:4px solid #25D366;">
+        <div style="font-size:32px;">🗂️</div>
+        <h3 style="font-family:sans-serif; font-size:18px; margin:12px 0 6px;"><strong>E-Filing & Digitalisation</strong></h3>
+        <p style="font-family:sans-serif; font-size:13.5px; color:#64748b; line-height:1.5; margin:0;">We digitise your paper files. Search any file in 10 seconds, from phone or laptop.</p>
+        <p style="font-family:sans-serif; font-size:24px; font-weight:900; color:#0f172a; margin:16px 0 4px;">P1,500 <span style="font-size:13px; font-weight:600; color:#64748b;">once-off</span></p>
+       
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background:#fff; border-radius:16px; padding:24px; box-shadow:0 5px 20px rgba(0,0,0,.06); border-top:4px solid #2563eb;">
+        <div style="font-size:32px;">🌐</div>
+        <h3 style="font-family:sans-serif; font-size:18px; margin:12px 0 6px;"><strong>Website + SEO + CMS</strong></h3>
+        <p style="font-family:sans-serif; font-size:13.5px; color:#64748b; line-height:1.5; margin:0;">Professional website that shows up on Google. You can update it yourself.</p>
+        <p style="font-family:sans-serif; font-size:24px; font-weight:900; color:#0f172a; margin:16px 0 4px;">P3,500 <span style="font-size:13px; font-weight:600; color:#64748b;">once-off</span></p>
+       
+      </div>
+
+      <!-- Card 4 -->
+      <div style="background:#0f172a; border-radius:16px; padding:24px; box-shadow:0 10px 25px rgba(15,23,42,.3);">
+        <div style="font-size:32px;">👑</div>
+        <h3 style="font-family:sans-serif; font-size:18px; margin:12px 0 6px; color:#fff;"><strong>Retainer</strong></h3>
+        <p style="font-family:sans-serif; font-size:13.5px; color:#cbd5e1; line-height:1.5; margin:0;">Branding + Ads + Web + SEO + IT Support. Your full team for one price.</p>
+        <p style="font-family:sans-serif; font-size:24px; font-weight:900; color:#fbbf24; margin:16px 0 4px;">P3,300 <span style="font-size:13px; font-weight:600; color:#cbd5e1;">/month</span></p>
+        <button onclick="openWhatsApp('Hi VirtueOps! I want the Monthly Retainer - P3,300/month.')" style="width:100%; background:#e11d48; color:#fff; border:none; padding:12px; border-radius:10px; font-weight:700; cursor:pointer;">Get This →</button>
+      </div>
+
+    </div>
+
+    <div style="margin-top:30px; background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:18px; display:inline-block; font-family:sans-serif;">
+      <strong style="color:#0f172a;">⭐ Trusted in Gaborone —</strong> <span style="color:#475569;">We have built fully functional systems for <strong>thriving businesses</strong>: Local + Cloud + E-Filing + Emails + Backup.</span>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="section-padding bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span
+          class="inline-flex items-center gap-2 bg-red-600/20 text-red-400 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-4">
+          <i data-lucide="star" class="w-3.5 h-3.5"></i>
+          Why Choose Us
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl mt-3">The VirtueOps Difference</h2>
+        <p class="text-slate-400 mt-3 max-w-xl mx-auto">Excellence in infrastructure operations with a client-first approach backed
+        by automation and deep systems expertise.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:-translate-y-1 text-center"
+          data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-14 h-14 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="users" class="w-7 h-7 text-red-400"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Senior Engineering Team</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Senior systems engineers with decades of combined
+            operations and incident-bridge experience.</p>
+        </div>
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:-translate-y-1 text-center"
+          data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-14 h-14 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="microscope" class="w-7 h-7 text-blue-400"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Advanced Technology</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">State-of-the-art observability tooling for precise, accurate
+            diagnostics.</p>
+        </div>
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:-translate-y-1 text-center"
+          data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-14 h-14 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="system-handshake" class="w-7 h-7 text-green-400"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Automation-First Delivery</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Automation-first runbooks and tailored remediation plans built around your platform.</p>
+        </div>
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all hover:-translate-y-1 text-center"
+          data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-14 h-14 bg-yellow-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="building-2" class="w-7 h-7 text-yellow-400"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Modern Tooling</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">A fully-equipped, automation-driven operations center designed around your stack.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="bg-red-600 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4">
+        <div class="stat-item border-white/20" data-aos="fade-up">
+          <div class="font-heading font-black text-4xl lg:text-5xl text-white" data-count="8">0</div>
+          <div class="text-red-200 text-sm mt-1">Years of Experience</div>
+        </div>
+        <div class="stat-item border-white/20" data-aos="fade-up" data-aos-delay="100">
+          <div class="font-heading font-black text-4xl lg:text-5xl text-white" data-count="100">0</div>
+          <div class="text-red-200 text-sm mt-1">Incidents Resolved</div>
+        </div>
+        <div class="stat-item border-white/20" data-aos="fade-up" data-aos-delay="200">
+          <div class="font-heading font-black text-4xl lg:text-5xl text-white" data-count="98">0</div>
+          <div class="text-red-200 text-sm mt-1">% Uptime Delivered</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="font-heading font-black text-4xl lg:text-5xl text-white">24/7</div>
+          <div class="text-red-200 text-sm mt-1">Incident Response</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENGAGEMENT PROCESS ===================== -->
+  <section class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="git-branch" class="w-3.5 h-3.5"></i>
+          Engagement Process
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Your Journey to
+          Better Platform Reliability</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">A clear, structured approach to infrastructure operations
+              from first audit to ongoing reliability.</p>
+      </div>
+
+      <div class="relative" data-aos="fade-up" data-aos-delay="100">
+        <!-- Line -->
+        <div
+          class="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-red-200 via-red-500 to-red-200">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center relative card-technical">
+            <div
+              class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-200 relative z-10">
+              <i data-lucide="clipboard-list" class="w-9 h-9 text-white"></i>
+            </div>
+            <div class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">1. Assessment</div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Thorough evaluation of your symptoms, infrastructure history,
+              and risk factors.</p>
+          </div>
+
+          <div class="text-center relative card-technical">
+            <div
+              class="w-20 h-20 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg relative z-10">
+              <i data-lucide="scan-system" class="w-9 h-9 text-white"></i>
+            </div>
+            <div class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">2. Roadmap</div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Deep diagnostics to accurately pinpoint the
+              root condition.</p>
+          </div>
+
+          <div class="text-center relative card-technical">
+            <div
+              class="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-red-200 relative z-10">
+              <i data-lucide="file-text" class="w-9 h-9 text-white"></i>
+            </div>
+            <div class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">3. Implementation</div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">A tailored remediation plan executed with
+              automation-first practices.</p>
+          </div>
+
+          <div class="text-center relative card-technical">
+            <div
+              class="w-20 h-20 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg relative z-10">
+              <i data-lucide="system-pulse" class="w-9 h-9 text-white"></i>
+            </div>
+            <div class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">4. 24/7 Operations</div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Continuous monitoring and follow-up to ensure lasting
+              platform reliability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPARTMENTS ===================== -->
+  <section id="teams" class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+          Teams
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Specialized Technical
+          Teams</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Each team staffed with sub-specialists
+          and equipped with the latest infrastructure operations tooling.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="dept-card bg-gradient-to-br from-red-600 to-red-800 text-white p-7 shadow-lg" data-aos="fade-left"
+          data-aos-delay="0">
+          <i data-lucide="system-pulse" class="w-10 h-10 mb-4 opacity-90"></i>
+          <h3 class="font-heading font-bold text-xl mb-2">Cloud Platform</h3>
+          <p class="text-red-100 text-sm leading-relaxed">End-to-end cloud platform operations covering migration, management, and
+            optimization of cloud infrastructure.</p>
+          <div class="mt-4 text-xs text-red-200 font-medium">AWS & GCP Certified</div>
+        </div>
+
+        <div class="dept-card bg-white dark:bg-slate-700 border border-gray-100 dark:border-slate-600 p-7 shadow-soft"
+          data-aos="fade-left" data-aos-delay="100">
+          <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="activity" class="w-6 h-6 text-red-600"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-slate-800 dark:text-white mb-2">DevSecOps</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Pipeline-integrated security including
+            scanning, secrets management, and compliance automation.</p>
+          <div class="mt-4 text-xs text-slate-400 font-medium">DevSecOps Specialists</div>
+        </div>
+
+        <div class="dept-card bg-white dark:bg-slate-700 border border-gray-100 dark:border-slate-600 p-7 shadow-soft"
+          data-aos="fade-left" data-aos-delay="200">
+          <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="system-pulse" class="w-6 h-6 text-blue-600"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-slate-800 dark:text-white mb-2">Observability</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Advanced distributed tracing, metrics pipelines,
+            log aggregation, and alerting diagnostics.</p>
+          <div class="mt-4 text-xs text-slate-400 font-medium">Observability Engineers</div>
+        </div>
+
+        <div class="dept-card bg-white dark:bg-slate-700 border border-gray-100 dark:border-slate-600 p-7 shadow-soft"
+          data-aos="fade-left" data-aos-delay="0">
+          <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="dumbbell" class="w-6 h-6 text-green-600"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-slate-800 dark:text-white mb-2">Managed Sysadmin</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Post-incident recovery with
+            supervised remediation and postmortem programs.</p>
+          <div class="mt-4 text-xs text-slate-400 font-medium">Dedicated NOC</div>
+        </div>
+
+        <div class="dept-card bg-white dark:bg-slate-700 border border-gray-100 dark:border-slate-600 p-7 shadow-soft"
+          data-aos="fade-left" data-aos-delay="100">
+          <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="zap" class="w-6 h-6 text-purple-600"></i>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-slate-800 dark:text-white mb-2">Database Operations</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Specialized database reliability, replication,
+            backup, and performance tuning.</p>
+          <div class="mt-4 text-xs text-slate-400 font-medium">Database Specialists</div>
+        </div>
+
+        <div class="dept-card bg-gradient-to-br from-slate-800 to-slate-900 text-white p-7 shadow-lg"
+          data-aos="fade-left" data-aos-delay="200">
+          <i data-lucide="siren" class="w-10 h-10 mb-4 text-red-400"></i>
+          <h3 class="font-heading font-bold text-xl mb-2">Incident Response</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">Rapid-response incident unit available 24 hours a
+            day, 7 days a week.</p>
+          <div class="mt-4 text-xs text-red-400 font-bold">24/7 Availability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+          Testimonials
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">What Our Clients
+          Say</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Thousands of clients trust VirtueOps with
+          their platform reliability. Here are their stories.</p>
+      </div>
+
+      <div class="slider-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="slider-track" id="testimonial-track">
+
+          <div class="slide">
+            <div class="testimonial-card dark:bg-slate-800 mx-2">
+              <div class="flex gap-1 mb-4">
+                <span class="text-yellow-400"></span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">"VirtueOps literally saved our
+                launch. After repeated outages, they ran a full systems audit and rebuilt our CI/CD pipeline. Uptime
+                went from 97% to 99.98% in one quarter."</p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center font-heading font-bold text-white text-sm">
+                  MJ</div>
+                <div>
+                  <div class="font-heading font-semibold text-sm text-slate-800 dark:text-white">Marcus Johnson</div>
+                  <div class="text-xs text-slate-500">CTO, FinTech Startup</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial-card dark:bg-slate-800 mx-2">
+              <div class="flex gap-1 mb-4">
+                <span class="text-yellow-400"></span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">"Our cloud bill was out of
+                control and nobody could explain why. The team here completely transformed our approach — costs are down
+                40% and deploys are faster than they've ever been."</p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center font-heading font-bold text-white text-sm">
+                  SE</div>
+                <div>
+                  <div class="font-heading font-semibold text-sm text-slate-800 dark:text-white">Sarah Edwards</div>
+                  <div class="text-xs text-slate-500">VP Engineering, SaaS Company</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial-card dark:bg-slate-800 mx-2">
+              <div class="flex gap-1 mb-4">
+                <span class="text-yellow-400"></span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">"Their infrastructure
+                rehabilitation program was exceptional. They guided us through every step of our migration off legacy
+                servers. We're now fully on Kubernetes and sleeping through the night!"</p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center font-heading font-bold text-white text-sm">
+                  RB</div>
+                <div>
+                  <div class="font-heading font-semibold text-sm text-slate-800 dark:text-white">Robert Barnes</div>
+                  <div class="text-xs text-slate-500">IT Director, Logistics Firm</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial-card dark:bg-slate-800 mx-2">
+              <div class="flex gap-1 mb-4">
+                <span class="text-yellow-400"></span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">"As a fintech with strict
+                compliance requirements, we needed a specialized partner. Their DevSecOps program has significantly reduced
+                our audit findings. Highly recommend this firm."</p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center font-heading font-bold text-white text-sm">
+                  LP</div>
+                <div>
+                  <div class="font-heading font-semibold text-sm text-slate-800 dark:text-white">Linda Park</div>
+                  <div class="text-xs text-slate-500">Head of Platform, Fintech</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial-card dark:bg-slate-800 mx-2">
+              <div class="flex gap-1 mb-4">
+                <span class="text-yellow-400"></span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">"I called the incident line at
+                3am during a production outage. The response was immediate and professional. They had an engineer on a
+                bridge within minutes and root cause identified before dawn. Lifesavers."</p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-heading font-bold text-white text-sm">
+                  TW</div>
+                <div>
+                  <div class="font-heading font-semibold text-sm text-slate-800 dark:text-white">Thomas Wilson</div>
+                  <div class="text-xs text-slate-500">Founder, E-commerce</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial-card dark:bg-slate-800 mx-2">
+              <div class="flex gap-1 mb-4">
+                <span class="text-yellow-400"></span>
+              </div>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-5">"The online booking system is
+                so convenient. We had a scoping call within 48 hours. The audit findings were explained clearly and the
+                remediation roadmap was straightforward. Excellent experience."</p>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center font-heading font-bold text-white text-sm">
+                  AM</div>
+                <div>
+                  <div class="font-heading font-semibold text-sm text-slate-800 dark:text-white">Amanda Moore</div>
+                  <div class="text-xs text-slate-500">CTO, SaaS Company</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="flex items-center justify-center gap-4 mt-8">
+        <button id="slide-prev"
+          class="w-10 h-10 rounded-full border-2 border-red-600 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
+          <i data-lucide="chevron-left" class="w-5 h-5"></i>
+        </button>
+        <div class="flex gap-2" id="slider-dots"></div>
+        <button id="slide-next"
+          class="w-10 h-10 rounded-full border-2 border-red-600 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG ===================== -->
+  <section id="blog" class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="rss" class="w-3.5 h-3.5"></i>
+          Engineering Blog
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Platform Reliability
+          Insights</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3">Expert articles on DevOps, systems administration, automation,
+          reliability engineering, and the latest in platform reliability practice.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="blog-card dark:bg-slate-700" data-aos="fade-up" data-aos-delay="0">
+          <div class="blog-img h-48 bg-gradient-to-br from-red-500 to-red-700 relative overflow-hidden">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="rgba(255,255,255,0.2)">
+                <path
+                  d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+              </svg>
+            </div>
+            <div class="absolute top-3 left-3 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">Reliability</div>
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              May 15, 2026
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2 leading-tight">10 Early
+              Warning Signs Your Infrastructure Is About to Fail</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Learn the subtle signals that
+              could indicate infrastructure issues and when to escalate to on-call engineers immediately.</p>
+            <a href="#"
+              class="text-red-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">Read Article
+              <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card dark:bg-slate-700" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-img h-48 bg-gradient-to-br from-blue-500 to-blue-700 relative overflow-hidden">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i data-lucide="activity" style="width:80px;height:80px;stroke:rgba(255,255,255,0.2)"></i>
+            </div>
+            <div class="absolute top-3 left-3 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Cost Optimization</div>
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              April 28, 2026
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2 leading-tight">How to
+              Cut Your Cloud Bill Naturally: A DevOps Engineer's Guide</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Evidence-based cost optimization
+              strategies that can significantly reduce spend without sacrificing reliability.</p>
+            <a href="#"
+              class="text-red-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">Read Article
+              <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card dark:bg-slate-700" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-img h-48 bg-gradient-to-br from-green-500 to-green-700 relative overflow-hidden">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <i data-lucide="salad" style="width:80px;height:80px;stroke:rgba(255,255,255,0.2)"></i>
+            </div>
+            <div class="absolute top-3 left-3 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Automation</div>
+          </div>
+          <div class="p-5">
+            <div class="text-xs text-slate-400 mb-2 flex items-center gap-2">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              April 10, 2026
+            </div>
+            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2 leading-tight">Terraform
+              Modules &amp; Platform Reliability: What the Practice Shows</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Exploring how reusable infrastructure
+              as code patterns protect your estate against drift and misconfiguration.</p>
+            <a href="#"
+              class="text-red-600 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all">Read Article
+              <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-10" data-aos="fade-up">
+        <a href="blog.html" class="btn-outline-dark">
+          <i data-lucide="book-open" class="w-5 h-5"></i>
+          View All Articles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+          FAQ
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Frequently Asked
+          Questions</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3">Everything you need to know about our services and booking
+          process.</p>
+      </div>
+
+      <div class="space-y-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-item">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            How do I book a consultation?
+            <i data-lucide="plus" class="w-5 h-5 text-red-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">You can book online using the consultation form above, call our operations center directly at
+            +267 78916610, or email us at ops@virtueops.net. We confirm all consultations within 2 business hours.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            What infrastructure challenges do you solve?
+            <i data-lucide="plus" class="w-5 h-5 text-red-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">We handle a comprehensive range of infrastructure conditions including outages, performance degradation,
+            misconfigurations, scaling failures, security incidents, certificate expiry, DNS issues, storage exhaustion,
+            and more. Our specialists are experienced in both common and complex infrastructure incidents.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Do you offer emergency support?
+            <i data-lucide="plus" class="w-5 h-5 text-red-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Yes, our incident response line is available 24 hours a day, 7 days a week. If
+            you're experiencing a production outage, data loss, or a security breach, call the on-call hotline
+            immediately — an engineer joins an incident bridge within minutes.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            How is pricing structured?
+            <i data-lucide="plus" class="w-5 h-5 text-red-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">We offer flexible engagement models: fixed-fee audits, monthly managed-ops retainers,
+            and hourly consulting. Please contact our team to review the right model and pricing for your platform
+            before your consultation.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            How long does a first assessment take?
+            <i data-lucide="plus" class="w-5 h-5 text-red-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">An initial consultation typically takes 45-60 minutes. This includes a detailed
+            technical history review, an infrastructure walkthrough, and if needed, an initial systems audit.
+            Comprehensive evaluations requiring deeper diagnostics may take longer.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Do you offer remote support consultations?
+            <i data-lucide="plus" class="w-5 h-5 text-red-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Yes, we offer secure remote consultations for follow-up reviews, remediation planning,
+            and initial assessments. Remote access consultations are available
+            Monday through Saturday, 24 hours a day.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA SECTION ===================== -->
+  <section class="section-padding" style="background: var(--technical-gradient);">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
+      <div
+        class="inline-flex items-center gap-2 bg-red-600/20 border border-red-400/30 text-red-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-6">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FCA5A5">
+          <path
+            d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+        </svg>
+        Take Action Today
+      </div>
+      <h2 class="font-heading font-bold text-2xl lg:text-4xl text-black mb-5 leading-tight">Take The First Step
+        Toward<br />Better Platform Reliability</h2>
+      <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Don't wait until warnings become incidents. Schedule
+        your infrastructure consultation today and invest in the reliability of your platform.</p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#consultations" class="btn-primary text-base py-3.5 px-8">
+          <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+          Book A Free Audit
+        </a>
+        <a href="#contact" class="btn-primary text-base py-3.5 px-8">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          Contact Operations Center
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="py-16 bg-red-50 dark:bg-slate-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+      <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+      </div>
+      <h3 class="font-heading font-bold text-2xl lg:text-3xl text-slate-900 dark:text-white mb-3">Subscribe to Ops
+        Updates</h3>
+      <p class="text-slate-500 dark:text-slate-400 mb-6">Receive expert engineering tips, automation ideas, platform reliability news,
+        and firm announcements directly to your inbox.</p>
+      <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Enter your email address" required
+          class="flex-1 border border-gray-200 dark:border-slate-600 dark:bg-slate-700 dark:text-white bg-white rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-red-500 transition-all" />
+        <button type="submit" class="btn-primary whitespace-nowrap py-3 px-6 text-sm">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          Subscribe
+        </button>
+      </form>
+      <p class="text-xs text-slate-400 mt-3">No spam, ever. Unsubscribe at any time.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+          Contact Us
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Get In Touch</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3">We're here to answer your questions and help you on your
+          platform reliability journey.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6 mb-10">
+        <div class="card-technical dark:bg-slate-800 text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="phone-call" class="w-7 h-7 text-red-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-base text-slate-800 dark:text-white mb-2">Incident Hotline</h3>
+          <a href="tel:+26778916610" class="text-red-600 font-bold text-lg">+267 78 916610 SYSOPS</a>
+          <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">On-call engineers, 24/7/365</p>
+        </div>
+
+        <div class="card-technical dark:bg-slate-800 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="map-pin" class="w-7 h-7 text-blue-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-base text-slate-800 dark:text-white mb-2">Operations Center Location</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm">Plot 22853 Phase 4<br />Gaborone, Botswana
+            10001</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Plot+22853+Phase+4,+Gaborone,+Botswana" target="_blank" rel="noopener" class="text-blue-600 text-sm font-medium mt-2 inline-block">Get Directions →</a>
+        </div>
+
+        <div class="card-technical dark:bg-slate-800 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="clock" class="w-7 h-7 text-green-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-base text-slate-800 dark:text-white mb-2">Support Hours</h3>
+          <div class="text-slate-600 dark:text-slate-300 text-sm space-y-1">
+            <div>Monday - Friday: <strong>8:00 AM - 6:00 PM</strong></div>
+            <div>Saturday: <strong>8:00 AM - 3:00 PM</strong></div>
+            <div>Holidays: <strong class="text-red-600">On-Call Only</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+
+  <!-- Footer Emergency Strip -->
+  <div style="background: linear-gradient(90deg, #7f1d1d 0%, #DC2626 50%, #7f1d1d 100%);" class="py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-white/15 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
+            <i data-lucide="phone-call" class="w-6 h-6 text-white"></i>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-white text-lg">Production Down? Call Us Now</div>
+            <div class="text-red-200 text-sm">Our on-call engineers join an incident bridge within minutes, around the clock.</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="tel:+26778916610"
+            class="bg-white text-red-700 font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-red-50 transition-all text-sm flex items-center gap-2 shadow-lg">
+            <i data-lucide="phone" class="w-4 h-4"></i> +267 78 916610 
+          </a>
+          <a href="mailto:oncall@virtueops.io"
+            class="bg-white/15 border border-white/30 text-white font-heading font-semibold px-6 py-2.5 rounded-lg hover:bg-white/25 transition-all text-sm flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i> Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer  -->
+  <footer class="text-white overflow-hidden relative">
+    <!-- Decorative Background Elements -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-[0.04] pointer-events-none"
+      style="background: radial-gradient(circle, #DC2626, transparent); transform: translate(-40%, -40%);"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full opacity-[0.03] pointer-events-none"
+      style="background: radial-gradient(circle, #0EA5E9, transparent); transform: translate(30%, 30%);"></div>
+
+    <!-- Systems Audit Decorative Line -->
+    <div class="w-full overflow-hidden border-b border-white/5">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="w-full h-10" fill="none">
+        <path
+          d="M0,20 L200,20 L240,20 L255,4 L265,36 L272,2 L282,38 L292,20 L500,20 L540,20 L555,4 L565,36 L572,2 L582,38 L592,20 L800,20 L840,20 L855,4 L865,36 L872,2 L882,38 L892,20 L1100,20 L1140,20 L1155,4 L1165,36 L1172,2 L1182,38 L1192,20 L1440,20"
+          stroke="#DC2626" stroke-width="1.5" stroke-opacity="0.5" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
+
+      <!-- TOP ROW: Brand + Newsletter -->
+      <div class="grid lg:grid-cols-2 gap-10 items-start mb-14 pb-14 border-b border-white/8">
+        <!-- Brand Block -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center shadow-lg shadow-red-900/50">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+                <path
+                  d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z" />
+              </svg>
+            </div>
+            <div>
+              <div class="font-heading font-extrabold text-2xl text-white tracking-tight">VirtueOps</div>
+              <div class="text-xs text-red-400 font-semibold uppercase tracking-widest">Infrastructure Engineers</div>
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6 max-w-md">
+            VirtueOps is a premier infrastructure engineering firm dedicated to delivering world-class platform reliability.
+            We are one of the most trusted DevOps and sysadmin practice in the region, combining advanced automation with a
+            client-first philosophy.
+          </p>
+
+          <!-- Certifications Row -->
+          <div class="flex flex-wrap gap-3 mb-6">
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-red-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="award" class="w-3.5 h-3.5 text-red-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">CKA Certified</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-blue-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-blue-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">SOC 2 Ready</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-green-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="star" class="w-3.5 h-3.5 text-green-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">AWS Partner</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-yellow-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="system" class="w-3.5 h-3.5 text-yellow-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">CNCF Member</span>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3">
+            <span class="text-slate-500 text-xs mr-1">Follow Us:</span>
+            <a href="#"
+              class="w-9 h-9 bg-[#1877F2] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              title="Facebook">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              style="background: linear-gradient(45deg, #f09433,#e6683c,#dc2743,#cc2366,#bc1888)" title="Instagram">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-[#0077B5] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              title="LinkedIn">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-[#FF0000] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              title="YouTube">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Newsletter Block -->
+        <div class="bg-gradient-to-br from-red-600/15 to-slate-800/40 border border-red-500/20 rounded-2xl p-7">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-lucide="mail-check" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-heading font-bold text-lg text-white">Platform Reliability Newsletter</h4>
+              <p class="text-slate-400 text-xs">Join 1,000+ subscribers</p>
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-5">Get weekly tips on platform reliability, 
+            infrastructure engineering news,
+            automation breakthroughs, and firm updates delivered right to your inbox.</p>
+          <form class="flex gap-2.5 mb-4" onsubmit="handleFooterNewsletter(event)">
+            <input type="email" placeholder="Enter your email address" required
+              class="flex-1 bg-white/8 border border-white/15 text-white placeholder-slate-500 rounded-lg px-4 py-3 text-sm 
+              focus:outline-none focus:border-red-500 transition-all" />
+            <button type="submit"
+              class="bg-red-600 hover:bg-red-700 text-white font-heading font-semibold px-5 py-3 rounded-lg text-sm 
+              transition-all whitespace-nowrap flex items-center gap-1.5 flex-shrink-0">
+              <i data-lucide="send" class="w-4 h-4"></i> Subscribe
+            </button>
+          </form>
+          <p class="text-slate-600 text-xs flex items-center gap-1.5">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-slate-500"></i>
+            Your privacy is protected. Unsubscribe anytime. No spam.
+          </p>
+        </div>
+      </div>
+
+      <!-- MAIN LINKS GRID: 5 columns -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-14 pb-14 border-b border-white/8">
+
+        <!-- Engineering Services -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-red-600 rounded-full inline-block"></span>
+            Engineering Services
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Platform
+                Consultation</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Systems Audit
+                & Diagnostics</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Kubernetes
+                &amp; Containers</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Platform
+                Migration</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Preventive
+                Maintenance</a></li>
+            <li><a href="Emergency.html"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Incident
+                Response</a></li>
+            <li><a href="#teams"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Database Operations</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Client Resources -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-blue-500 rounded-full inline-block"></span>
+            Client Resources
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="#consultations"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Book
+                Consultation</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Client
+                Portal</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Remote
+                Support</a>
+            </li>
+            <li><a href="#faq"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Client
+                FAQ</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>SLA
+                Info</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Technical
+                Records</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Billing
+                & Payments</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-green-500 rounded-full inline-block"></span>
+            Quick Links
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="#about"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>About
+                Engineer</a></li>
+            <li><a href="#teams"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Teams</a>
+            </li>
+            <li><a href="blog.html"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Engineering
+                Blog</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Careers</a>
+            </li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Research</a>
+            </li>
+            <li><a href="#contact"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Contact
+                Us</a></li>
+            <li><a href="#"
+                class="text-slate-400 text-sm hover:text-red-400 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-red-500 flex-shrink-0"></i>Sitemap</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Support Hours -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-yellow-500 rounded-full inline-block"></span>
+            Support Hours
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Monday</span>
+              <span class="text-slate-300 font-medium text-xs">8AM - 6PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Tuesday</span>
+              <span class="text-slate-300 font-medium text-xs">8AM - 6PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Wednesday</span>
+              <span class="text-slate-300 font-medium text-xs">8AM - 6PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Thursday</span>
+              <span class="text-slate-300 font-medium text-xs">8AM - 6PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Friday</span>
+              <span class="text-slate-300 font-medium text-xs">8AM - 6PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Saturday</span>
+              <span class="text-slate-300 font-medium text-xs">8AM - 3PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Sunday</span>
+              <span class="text-red-400 font-semibold text-xs">Emergency Only</span>
+            </li>
+          </ul>
+          <div class="mt-4 bg-green-600/15 border border-green-500/25 rounded-lg px-3 py-2 flex items-center gap-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0"></span>
+            <span class="text-green-400 text-xs font-semibold">Currently Open</span>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-red-500 rounded-full inline-block"></span>
+            Contact Info
+          </h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-red-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-red-400"></i>
+              </div>
+              <div>
+                <div class="text-slate-300 text-xs font-semibold mb-0.5">Our Location</div>
+                <div class="text-slate-500 text-xs leading-relaxed">Plot 22853 Phase 4,<br />Gaborone, Botswana
+                  10001</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-red-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="phone" class="w-4 h-4 text-red-400"></i>
+              </div>
+              <div>
+                <div class="text-slate-300 text-xs font-semibold mb-0.5">Phone</div>
+                <a href="tel:+26778916610" class="text-slate-500 text-xs hover:text-red-400 transition-colors">+267 78 916 610
+                  ops</a><br />
+                <a href="tel:+26778916610" class="text-slate-500 text-xs hover:text-red-400 transition-colors">+267 73 648 092</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-red-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="mail" class="w-4 h-4 text-red-400"></i>
+              </div>
+              <div>
+                <div class="text-slate-300 text-xs font-semibold mb-0.5">Email</div>
+                <a href="mailto:ops@virtueops.net"
+                  class="text-slate-500 text-xs hover:text-red-400 transition-colors">ops@virtueops.net</a><br />
+                <a href="mailto:contact@virtueops.net"
+                  class="text-slate-500 text-xs hover:text-red-400 transition-colors">contact@virtueops.net</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GALLERY ROW: Splashbase/Unsplash Images -->
+      <div class="mb-14 pb-14 border-b border-white/8">
+        <div class="flex items-center justify-between mb-5">
+          <h4 class="font-heading font-semibold text-sm text-white flex items-center gap-2">
+            <span class="w-1 h-4 bg-red-500 rounded-full inline-block"></span>
+            Gallery Of Our Operations Center & Team
+          </h4>
+          <a href="#"
+            class="text-red-400 text-xs font-semibold hover:text-red-300 transition-colors flex items-center gap-1">
+            View All <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
+          <!-- Unsplash real images - technical/infrastructure engineering/engineer themed -->
+          <a href="#" class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=200&fit=crop&auto=format"
+              alt="Engineer consultation" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div
+              class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in"
+                class="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </div>
+          </a>
+          <a href="#" class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1591808216268-ce0b82787efe?w=200&h=200&fit=crop&auto=format"
+              alt="Technical equipment" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div
+              class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in"
+                class="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </div>
+          </a>
+          <a href="#" class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=200&h=200&fit=crop&auto=format"
+              alt="Engineers on incident bridge" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div
+              class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in"
+                class="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </div>
+          </a>
+          <a href="#" class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=200&h=200&fit=crop&auto=format"
+              alt="Monitoring dashboards" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div
+              class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in"
+                class="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </div>
+          </a>
+          <a href="#" class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=200&h=200&fit=crop&auto=format"
+              alt="Technical team" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div
+              class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in"
+                class="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </div>
+          </a>
+          <a href="#" class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=200&h=200&fit=crop&auto=format"
+              alt="Code on screen" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div
+              class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in"
+                class="w-5 h-5 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW: Accreditations + Map Preview -->
+      <div class="grid md:grid-cols-2 gap-8 mb-10 pb-10 border-b border-white/8">
+        <!-- Accreditations & Awards -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-yellow-400 rounded-full inline-block"></span>
+            Accreditations & Awards
+          </h4>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="award" class="w-5 h-5 text-yellow-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">Best DevOps Consultancy</div>
+                <div class="text-slate-400 text-xs">Ops Awards 2024</div>
+              </div>
+            </div>
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="shield-check" class="w-5 h-5 text-blue-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">ISO 27001 Certified</div>
+                <div class="text-slate-400 text-xs">Security Management 2024</div>
+              </div>
+            </div>
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="system" class="w-5 h-5 text-red-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">SOC 2 Type II</div>
+                <div class="text-slate-400 text-xs">Trust Services Criteria 2024</div>
+              </div>
+            </div>
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="star" class="w-5 h-5 text-green-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">Clutch Top Rated</div>
+                <div class="text-slate-400 text-xs">Top 10 Systems Engineers 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map + Recent Blog Posts -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-blue-500 rounded-full inline-block"></span>
+            Recent Engineering Articles
+          </h4>
+          <div class="space-y-3">
+            <a href="#blog"
+              class="flex items-start gap-3 p-3 bg-white/4 border border-white/8 rounded-xl hover:bg-white/8 transition-all group">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=80&h=80&fit=crop&auto=format"
+                alt="Server room blog" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
+              <div class="min-w-0">
+                <div
+                  class="text-white text-xs font-semibold leading-snug group-hover:text-red-400 transition-colors line-clamp-2">
+                  10 Warning Signs Your Infrastructure Is About to Fail</div>
+                <div class="text-slate-400 text-xs mt-1 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3 h-3"></i> May 15, 2026
+                </div>
+              </div>
+            </a>
+            <a href="blog-detail.html"
+              class="flex items-start gap-3 p-3 bg-white/4 border border-white/8 rounded-xl hover:bg-white/8 transition-all group">
+              <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=80&h=80&fit=crop&auto=format"
+                alt="Cloud cost tips" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
+              <div class="min-w-0">
+                <div
+                  class="text-white text-xs font-semibold leading-snug group-hover:text-red-400 transition-colors line-clamp-2">
+                  How to Cut Your Cloud Bill Naturally</div>
+                <div class="text-slate-400 text-xs mt-1 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3 h-3"></i> April 28, 2026
+                </div>
+              </div>
+            </a>
+            <a href="#blog"
+              class="flex items-start gap-3 p-3 bg-white/4 border border-white/8 rounded-xl hover:bg-white/8 transition-all group">
+              <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=80&h=80&fit=crop&auto=format"
+                alt="Terraform module design" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
+              <div class="min-w-0">
+                <div
+                  class="text-white text-xs font-semibold leading-snug group-hover:text-red-400 transition-colors line-clamp-2">
+                  Terraform Modules &amp; Platform Reliability: What the Practice Shows</div>
+                <div class="text-slate-400 text-xs mt-1 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3 h-3"></i> April 10, 2026
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
+        <!-- Copyright -->
+        <div class="text-center lg:text-left">
+          <p class="text-slate-400 text-sm">© 2026 <span class="text-slate-300 font-semibold"></span>. All
+            rights reserved by <span class="text-slate-300 font-semibold"><a href="https://www.virtueops.net/" target="_blank">VirtueOps</a></span>. Built for VSC &bull; Distributed by <span class="text-slate-300 font-semibold"><a href="https://www.virtueops.net/" target="_blank">VirtueCreativeSystems</a></span>.</p>
+          <p class="text-slate-400 text-xs mt-1">This website is for informational purposes only and does not constitute
+            technical advice.</p>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a href="privacy.html" class="text-slate-400 text-xs hover:text-red-400 transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="text-slate-400 text-xs hover:text-red-400 transition-colors">Terms of Service</a>
+          <a href="faq.html" class="text-slate-400 text-xs hover:text-red-400 transition-colors">FAQs</a>
+          <a href="#" class="text-slate-400 text-xs hover:text-red-400 transition-colors">Accessibility</a>
+          <a href="#" class="text-slate-400 text-xs hover:text-red-400 transition-colors">Cookie Policy</a>
+          <a href="#" class="text-slate-400 text-xs hover:text-red-400 transition-colors">Sitemap</a>
+        </div>
+
+        <!-- Payment Accepted -->
+        <div class="flex items-center gap-2">
+          <span class="text-slate-400 text-xs">Platforms:</span>
+          <div class="flex gap-1.5">
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">AWS</span>
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">Azure</span>
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">GCP</span>
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">+more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE STICKY CTA ===================== -->
+  <div class="mobile-cta dark:bg-slate-900 dark:border-t dark:border-slate-700">
+    <a href="#consultations" class="btn-primary w-full justify-center py-3.5 text-base">
+      <i data-lucide="calendar-plus" class="w-5 h-5"></i>
+      Book A Free Audit Now
+    </a>
+  </div>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path
+        d="M3 4h18v6H3V4zm2 2v2h2V6H5zm12 0h-2v2h2V6zM3 14h18v6H3v-6zm2 2v2h2v-2H5zm12 0h-2v2h2v-2z"
+        fill="white" stroke="none" />
+    </svg>
+  </button>
+
+  <!-- Success Toast -->
+  <div id="toast"
+    class="fixed top-20 right-4 bg-green-600 text-white px-5 py-3 rounded-lg shadow-lg font-medium text-sm translate-x-full opacity-0 
+    transition-all duration-300 z-[200] flex items-center gap-2">
+    <i data-lucide="check-circle" class="w-5 h-5"></i>
+    <span id="toast-msg">Consultation request submitted!</span>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="assets/script.js"></script>
+
+  <script>
+const waNumber = "26778916610"; // <-- PUT YOUR WHATSAPP NUMBER HERE, no +
+
+const widget = document.getElementById('wa-widget');
+const btn = document.getElementById('wa-btn');
+const closeBtn = document.getElementById('wa-close');
+
+btn.addEventListener('click', () => {
+  widget.classList.toggle('open');
+});
+
+closeBtn.addEventListener('click', () => {
+  widget.classList.remove('open');
+});
+
+// When user taps a service, open WhatsApp with that message
+document.querySelectorAll('.wa-option').forEach(option => {
+  option.addEventListener('click', () => {
+    const msg = encodeURIComponent(option.getAttribute('data-msg'));
+    window.open(`https://wa.me/${waNumber}?text=${msg}`, '_blank');
+    widget.classList.remove('open');
+  });
+});
+
+// Auto-open once after 8 seconds to catch attention (only once)
+let autoOpened = false;
+setTimeout(() => {
+  if (!autoOpened && window.innerWidth > 500) {
+    widget.classList.add('open');
+    autoOpened = true;
+  }
+}, 8000);
+</script>
+
+<script>
+function handleFooterNewsletter(event) {
+  event.preventDefault();
+
+  // Get the email they typed
+  const emailInput = event.target.querySelector('input[type="email"]');
+  const email = emailInput.value.trim();
+
+  if (!email) return;
+
+  // 1. Send it to your WhatsApp so YOU get the lead
+  const message = `New Newsletter Subscriber!%0AEmail: ${email}%0AFrom: VirtueOps Website Footer`;
+  window.open(`https://wa.me/26778916610?text=${message}`, '_blank');
+
+  // 2. Show them it worked
+  event.target.innerHTML = '<p class="text-green-400 text-sm font-semibold">✅ You\'re subscribed! Check your inbox for weekly tips.</p>';
+}
+</script>
+<script>
+function handleConsultation(event) {
+  event.preventDefault();
+
+  const name = document.getElementById('consultName').value;
+  const email = document.getElementById('consultEmail').value;
+  const phone = document.getElementById('consultPhone').value;
+  const date = document.getElementById('consultDate').value;
+  const dept = document.getElementById('consultDepartment').value;
+  const msg = document.getElementById('consultMessage').value;
+
+  const text = `NEW CONSULTATION BOOKING - VirtueOps%0A%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}%0APreferred Date: ${date}%0ADepartment: ${dept}%0AMessage: ${msg}`;
+
+  window.open(`https://wa.me/26778916610?text=${text}`, '_blank');
+}
+</script>
+
+<!-- VIRTUEOPS LIVE CHAT -->
+<style>
+  #vo-chat-btn {
+    position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+    background: #0f172a; color: white; border: 2px solid #22c55e;
+    border-radius: 50px; padding: 10px 16px 10px 10px;
+    display: flex; align-items: center; gap: 10px; cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4); font-family: sans-serif;
+  }
+  #vo-chat-btn .vo-avatar {
+    width: 42px; height: 42px; background: #22c55e; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 20px; position: relative;
+  }
+  #vo-chat-btn .vo-dot {
+    width: 12px; height: 12px; background: #22c55e; border: 2px solid white;
+    border-radius: 50%; position: absolute; bottom: 0; right: 0;
+  }
+  #vo-chat-box {
+    position: fixed; bottom: 90px; right: 20px; z-index: 9999; width: 320px; max-width: calc(100vw - 40px);
+    background: white; border-radius: 20px; overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35); display: none; font-family: sans-serif;
+  }
+  #vo-chat-box .vo-head { background: #0f172a; color: white; padding: 16px; display: flex; gap: 12px; align-items: center; }
+  #vo-chat-box .vo-body { padding: 16px; background: #f8fafc; }
+  .vo-msg { background: white; padding: 12px; border-radius: 12px; border: 1px solid #e2e8f0; font-size: 14px; line-height: 1.5; color: #1e293b; }
+  .vo-opt {
+    display: block; width: 100%; text-align: left; margin-top: 10px; padding: 12px;
+    background: white; border: 1px solid #22c55e; border-radius: 12px; cursor: pointer;
+    font-size: 14px; font-weight: 600; color: #0f172a;
+  }
+  .vo-opt:hover { background: #22c55e; color: white; }
+  .vo-small { font-size: 12px; color: #64748b; text-align: center; margin-top: 12px; }
+</style>
+
+<div id="vo-chat-btn" onclick="document.getElementById('vo-chat-box').style.display = document.getElementById('vo-chat-box').style.display === 'block' ? 'none' : 'block'">
+  <div class="vo-avatar">⚙️<span class="vo-dot"></span></div>
+  <div style="text-align:left; line-height:1.2">
+    <div style="font-weight:700; font-size:14px">Chat with an Engineer</div>
+    <div style="font-size:12px; color:#22c55e">● Online - Replies in ~5 mins</div>
+  </div>
+</div>
+
+<div id="vo-chat-box">
+  <div class="vo-head">
+    <div style="width:40px;height:40px;background:#22c55e;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">⚙️</div>
+    <div>
+      <div style="font-weight:700">VirtueOps Engineer</div>
+      <div style="font-size:12px;color:#22c55e">● Online Now | Gaborone</div>
+    </div>
+    <div onclick="document.getElementById('vo-chat-box').style.display='none'" style="margin-left:auto;cursor:pointer;font-size:20px">×</div>
+  </div>
+  <div class="vo-body">
+    <div class="vo-msg">Hey 👋 I'm Trent from <b>VirtueOps</b>.<br>What do you need help with today?</div>
+    <button class="vo-opt" onclick="voChat('Hi VirtueOps, I need help with CLOUD / E-Filing for my business')">☁️ Cloud / E-Filing</button>
+    <button class="vo-opt" onclick="voChat('Hi VirtueOps, I need BACKUP & Data Protection for my business')">💾 Backup & Data Protection</button>
+    <button class="vo-opt" onclick="voChat('Hi VirtueOps, I need a WEBSITE / Business in a Box')">🌐 Website / Business in a Box</button>
+    <button class="vo-opt" onclick="voChat('Hi VirtueOps, I need DEVOPS / IT Support')">🛠️ DevOps / IT Support</button>
+    <div class="vo-small">Opens WhatsApp • No sign-up needed</div>
+  </div>
+</div>
+
+<script>
+function voChat(msg) {
+  const url = 'https://api.whatsapp.com/send?phone=26778916610&text=' + encodeURIComponent(msg);
+  window.open(url, '_blank');
+}
+</script>
+<!-- END VIRTUEOPS LIVE CHAT -->
+</body>
+</body>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
